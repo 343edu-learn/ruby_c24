@@ -23,3 +23,4 @@ end
 user = User.new '343'
 puts user.name
 puts user.get_counter
+
