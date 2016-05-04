@@ -30,4 +30,4 @@ class User
 end
 
 user = User.new('343', 18)
-user.say_hello
+user.say_hey

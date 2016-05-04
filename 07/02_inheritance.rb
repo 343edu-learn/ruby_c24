@@ -21,11 +21,12 @@ class Admin < User
 
 end
 
-user = User.new('user_1', 18)
-p user.panels
+# p Admin.superclass
+# user = User.new('user_1', 18)
+# p user.panels
 
-puts '-' * 30
-admin = Admin.new('admin_1', 28)
-puts admin.name
-p admin.panels
+# puts '-' * 30
+# admin = Admin.new('admin_1', 28)
+# puts admin.name
+# p admin.panels
 
