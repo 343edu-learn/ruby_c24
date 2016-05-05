@@ -8,7 +8,7 @@ a.instance_eval do
   end
 end
 
-puts a.to_343
+# puts a.to_343
 
-# b = "world"
-# b.to_343 # => error
+b = "world"
+b.to_343 # => error

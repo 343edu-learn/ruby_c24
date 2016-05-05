@@ -16,3 +16,5 @@ User.instance_eval do
     'hi'
   end
 end
+
+puts User.new.hello

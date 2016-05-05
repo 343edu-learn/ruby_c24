@@ -6,7 +6,7 @@
 $LOAD_PATH << File.expand_path('../track/lib', __FILE__)
 
 require 'track'
-require 'net/http'
+# require 'net/http'
 
 puts Track::VERSION
 puts Track::Parser.parse

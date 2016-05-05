@@ -4,7 +4,7 @@ class User
 end
 
 User.class_eval do
-  
+
   attr_accessor :name
 
   def hello

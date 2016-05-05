@@ -2,10 +2,10 @@
 
 # 1. print require and load result
 
-require 'net/http'
+# puts require 'net/http'
 # puts require 'net/http'
 
-# puts load 'net/http.rb'
-# puts load 'net/http.rb'
+puts load 'net/http.rb'
+puts load 'net/http.rb'
 
-puts Net::HTTP
+# puts Net::HTTP

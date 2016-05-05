@@ -10,5 +10,5 @@ class User
   include Management
 end
 
-# User.track # => error
-Management.track
+User.track # => error
+# Management.track
