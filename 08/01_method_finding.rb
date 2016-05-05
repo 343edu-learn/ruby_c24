@@ -10,5 +10,6 @@ end
 class Admin < User
 end
 
+# puts Admin.ancestors
 admin = Admin.new
 p admin.panels

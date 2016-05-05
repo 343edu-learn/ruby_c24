@@ -9,8 +9,8 @@ module Management
 end
 
 class User
-  # prepend Management
-  include Management
+  prepend Management
+  # include Management
 
   def company_notifies
     'company_notifies from user'
