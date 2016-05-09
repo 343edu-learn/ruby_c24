@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position</title>
+
+    <style type="text/css">
+      body {
+        height: 1000px;
+      }
+      .div_1 {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        width: 100px;
+        height: 100px;
+        background: gray;
+      }
+      .div_2 {
+        position: fixed;
+        bottom: 20px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+
+      .div_3 {
+        position: relative;
+        left: 100px;
+        top: 100px;
+        width: 100px;
+        height: 100px;
+        background: gray;
+      }
+      .div_4 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div_1">div absolute</div>
+    <div class="div_2">div fixed</div>
+
+    <div class="div_3">
+      <div class="div_4">div_4</div>
+    </div>
+  </body>
+</html>

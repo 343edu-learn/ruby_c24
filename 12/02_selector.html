@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>selector</title>
+
+    <style type="text/css">
+      a {
+        text-decoration: none;
+        color: red;
+        font-size: 14px;
+      }
+      a:hover {
+        border: 1px solid red;
+      }
+      .blue_a {
+        color: blue;
+      }
+      #wrapper {
+        background: gray;
+      }
+      ul li:last-child {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <p>
+        <a href="#">Home</a>
+        <a href="" class="blue_a">Blue Link</a>
+      </p>
+      <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+      </ul>
+    </div>
+  </body>
+</html>
