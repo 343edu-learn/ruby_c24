@@ -35,8 +35,6 @@ class BlogsController < ApplicationController
     @blog = Blog.find params[:id]
     @blog.attributes = blog_attrs
     if @blog.save
-      @blog.tags.destroy_all
-
       flash[:notice] = "博客更新成功"
       redirect_to blogs_path
     else

@@ -14,7 +14,7 @@ class Blog < ActiveRecord::Base
       one_tag = Tag.find_by(title: tag)
       one_tag = Tag.new(title: tag) unless one_tag
 
-      self.tags << one_tag
+      self.tags << one_tag unless self.tag_ids.include?(one_tag.id)
     end
   end
 
