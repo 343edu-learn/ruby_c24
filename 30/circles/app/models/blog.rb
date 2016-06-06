@@ -10,11 +10,13 @@ class Blog < ActiveRecord::Base
 
 
   def tags_string= one_tags
+    self.tags.destroy_all
+    
     one_tags.split(',').each do |tag|
       one_tag = Tag.find_by(title: tag)
       one_tag = Tag.new(title: tag) unless one_tag
 
-      self.tags << one_tag unless self.tag_ids.include?(one_tag.id)
+      self.tags << one_tag
     end
   end
 
