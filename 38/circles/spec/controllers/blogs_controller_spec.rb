@@ -37,7 +37,7 @@ describe BlogsController do
     end
 
     context "#update by correct way" do
-      it "should faill" do
+      it "should fail" do
         expect(@blog).to receive(:save).and_return(false)
         expect(controller).to receive_message_chain(:current_user, :blogs, :find).and_return(@blog)
 
@@ -45,11 +45,11 @@ describe BlogsController do
         expect(response).to render_template(:new)
       end
 
-      it "should faill" do
+      it "should success" do
         expect(@blog).to receive(:save).and_return(true)
         expect(controller).to receive_message_chain(:current_user, :blogs, :find).and_return(@blog)
 
-        put :update, id: @blog.id, blog: { title: "test" }
+        put :update, id: @blog.id, blog: { title: "" }
         expect(response).to redirect_to(blogs_path)
       end
     end

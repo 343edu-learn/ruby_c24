@@ -5,7 +5,7 @@ module Helpers
   end
 
   def signin_user user
-    session[:user_id] = user
+    session[:user_id] = user.id
   end
 
 end
